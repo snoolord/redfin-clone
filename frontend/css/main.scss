@@ -1,0 +1,109 @@
+body, html {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#RedfinLogo
+{
+  color: white;
+  svg {
+    fill: white;
+    width: 92px;
+    height:35px;
+  }
+
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+li {
+  list-style: none;
+}
+
+.clearfix:after {
+   content: " "; /* Older browser do not support empty content */
+   visibility: hidden;
+   display: block;
+   height: 0;
+   clear: both;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  font-size: 15px;
+  line-height: 20px;
+  font-family: "Helvetica",Arial,sans-serif;
+  align-items: center;
+  color: white;
+  .single-line-menus {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    width: 547.5px;
+    justify-content: space-between;
+    .item-phone {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      padding: 0 10px;
+    }
+    #top-menus {
+      height: 100%;
+      display: flex;
+      align-items: center;
+      flex-grow: 1;
+      .redfin-menu {
+        width: 250px;
+        display: flex;
+        height: 100%;
+        align-items: center;
+        flex-grow: 3;
+        justify-content: space-around;
+        margin-top: 0;
+        .redfin-menu-item {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          height: 100%;
+          flex-grow: 1;
+        }
+        .forums {
+          display: flex;
+          align-items: center;
+          position: relative;
+            .tool-list {
+            position: absolute;
+          }
+        }
+      }
+    }
+
+    #user-menus {
+        display: flex;
+        flex-grow: 1;
+        justify-content: space-around;
+        height: 100%;
+        .user-menu-item {
+          display: flex;
+          flex-grow: 1;
+          justify-content: center;
+          align-items: center;
+        }
+    }
+  }
+}
+
+#home-bar {
+  height: 600px;
+  background-size: cover;
+  background-image: url("https://ssl.cdn-redfin.com/v135.1.1/images/homepage/banners/DuskPeacock_Desktop.jpg")
+}
