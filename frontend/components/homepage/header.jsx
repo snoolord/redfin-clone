@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
+
 class Header extends Component {
   constructor(props){
     super(props);
@@ -11,10 +12,10 @@ class Header extends Component {
 
   clickLink(route) {
     return (e) => {
-      console.log("hello");
       this.props.router.push(route);
     };
   }
+
   toolList() {
     if (this.state.showList) {
       return (
@@ -59,7 +60,7 @@ class Header extends Component {
                 Sign Up
               </div>
               <div id="login" className="user-menu-item" onClick={this.clickLink('login')}>
-                Login
+                Join
               </div>
             </div>
           </div>
