@@ -28,6 +28,13 @@ li {
   height: 0;
   clear: both; }
 
+.active::after {
+  content: "";
+  position: absolute;
+  height: 0.5em;
+  border-top: 1px solid white;
+  z-index: 10; }
+
 .header {
   padding: 0 16px;
   display: flex;
@@ -118,7 +125,8 @@ li {
     display: flex;
     justify-content: space-between; }
     #home-bar-left .tabs .active {
-      font-weight: 700; }
+      font-weight: 700;
+      border-bottom: solid; }
   #home-bar-left .title {
     font-size: 1.25rem;
     font-weight: 400;

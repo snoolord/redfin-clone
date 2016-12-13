@@ -35,6 +35,13 @@ li {
    clear: both;
 }
 
+.active::after {
+   content:"";
+   position: absolute;
+   height: 0.5em;
+   border-top: 1px solid white;
+   z-index: 10;
+}
 .header {
    padding: 0 16px;
    display: flex;
@@ -131,7 +138,7 @@ li {
       font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
       font-weight: 700;
       font-size: 16px;
-      color: rgba(51, 51, 51, 0.75); 
+      color: rgba(51, 51, 51, 0.75);
       padding: 12px 24px;
    }
    .tabs {
@@ -140,6 +147,7 @@ li {
       justify-content: space-between;
       .active {
          font-weight: 700;
+         border-bottom: solid;
       }
    }
    .title {
