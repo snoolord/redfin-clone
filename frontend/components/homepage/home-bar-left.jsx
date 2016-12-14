@@ -13,7 +13,7 @@ class HomeBarLeft extends Component {
       if (this.state.select === cls) {
          return `title ${cls} active`;
       } else {
-         return 'title';
+         return `title ${cls}`;
       }
    }
 
@@ -31,17 +31,19 @@ class HomeBarLeft extends Component {
          return (
             <div className="seller-consultant-address">
                <h2 className="title">Request a free consultation on your home's value</h2>
-               <div className="address-container">
-                  <span className="address-container-text">
-                     Street Address
-                  </span>
-                  <input id="address-input-box" className="address-input-box" placeholder="Enter Your Street Address"></input>
-               </div>
-               <div className="zip-code-container">
-                  <span className="zip-container-text">
-                     ZIP Code
-                  </span>
-                  <input id="zip-code-input-box" className="address-input"></input>
+               <div  className="address-info-container">
+                  <div className="address-container">
+                     <span className="address-container-text">
+                        Street Address
+                     </span>
+                     <input id="address-input-box" className="address-input-box" placeholder="Enter Your Street Address"></input>
+                  </div>
+                  <div className="zip-code-container">
+                     <span className="zip-container-text">
+                        ZIP Code
+                     </span>
+                     <input id="zip-code-input-box" className="address-input"></input>
+                  </div>
                </div>
             </div>
          );
@@ -102,9 +104,9 @@ class HomeBarLeft extends Component {
          </h1>
          <div className="homepage-tab-container">
             <div className="tabs">
-               <h2 className={this.classSet('find-a-home')} onClick={() => this.setState({['select']: 'find-a-home'})}>Find a Home</h2>
-               <h2 className={this.classSet('sell-my-home')} onClick={() => this.setState({['select']: 'sell-my-home'})}>Sell My Home</h2>
-               <h2 className={this.classSet('see-home-estimate')} onClick={() => this.setState({['select']: 'see-home-estimate'})}>See Home Estimate</h2>
+                  <h2 className={this.classSet('find-a-home')} onClick={() => this.setState({['select']: 'find-a-home'})}>Find a Home</h2>
+                  <h2 className={this.classSet('sell-my-home')} onClick={() => this.setState({['select']: 'sell-my-home'})}>Sell My Home</h2>
+                  <h2 className={this.classSet('see-home-estimate')} onClick={() => this.setState({['select']: 'see-home-estimate'})}>See Home Estimate</h2>
             </div>
             <div className="tab-contents">
                {this.upperTabContent()}

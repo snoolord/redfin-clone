@@ -118,7 +118,7 @@ li {
    background-position: bottom;
    background-image: linear-gradient(rgba(0,0,0, 0.55) 0, rgba(0,0,0,0) 250px), linear-gradient(to left, rgba(0,0,0,.45) 0,rgba(0,0,0,0) 350px), url("https://ssl.cdn-redfin.com/v135.1.1/images/homepage/banners/DuskPeacock_Desktop.jpg");
 }
-
+// Home Bar Left
 #home-bar-left {
    color: white;
    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -142,11 +142,27 @@ li {
       padding: 12px 24px;
    }
    .tabs {
-      width: 500px;
-      display: flex;
+      width: 550px;
       justify-content: space-between;
+      margin-bottom: 16px;
+      .find-a-home {
+         display: inline-block;
+         margin-top: 0;
+         margin-right: 32.59px;
+         margin-bottom: 8px;
+      }
+      .sell-my-home {
+         display: inline-block;
+         margin: 0 22.71px 8px 22.71px;
+      }
+      .see-home-estimate {
+         display: inline-block;
+         margin: 0 0 8px 37.44px;
+      }
       .active {
          font-weight: 700;
+         margin-bottom: 0;
+         padding-bottom: 5px;
          border-bottom: solid;
       }
    }
@@ -155,7 +171,6 @@ li {
       font-weight: 400;
       letter-spacing: -.03em  ;
       line-height: 130%;
-      margin-top: 0;
       -webkit-font-smoothing: antialiased;
    }
 }
@@ -209,4 +224,63 @@ button:focus {
       color: white;
    }
 
+}
+
+// Sell My Home
+
+.seller-consultant-address {
+   width: 510px;
+   margin-bottom: 20px;
+   .address-info-container {
+      display: flex;
+      justify-content: space-between;
+      .address-container {
+         display: flex;
+         flex-direction: column;
+         .address-container-text {
+            font-size: .875rem;
+            margin-bottom: 3px;
+         }
+         .address-input-box {
+            border: 1px solid #ccc;
+            font-size: .875rem;
+            padding-left: 10px;
+            width: 345px;
+            height: 40px;
+         }
+      }
+      .zip-code-container {
+         display: flex;
+         flex-direction: column;
+         .zip-container-text {
+            font-size: .875rem;
+            margin-bottom: 3px;
+         }
+         .address-input {
+            border: 1px solid #ccc;
+            height: 38px;
+            width: 153px;
+            padding-left: 10px;
+         }
+      }
+   }
+}
+
+.sell-my-home-button {
+   font-size: 1rem;
+   text-rendering: optimizeLegibility;
+   width: 45%;
+   height: 40px;
+   border-radius: 2px;
+   line-height: 1;
+   letter-spacing: -.1px;
+   cursor: pointer;
+   box-shadow: none;
+   transition: all .1s ease-out 0s;
+   color: #fff;
+   background-color: #c82021;
+   border-color: #c82021;
+   background: #c82021;
+   border: none;
+   -webkit-appearance: none;
 }

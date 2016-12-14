@@ -121,18 +121,30 @@ li {
     color: rgba(51, 51, 51, 0.75);
     padding: 12px 24px; }
   #home-bar-left .tabs {
-    width: 500px;
-    display: flex;
-    justify-content: space-between; }
+    width: 550px;
+    justify-content: space-between;
+    margin-bottom: 16px; }
+    #home-bar-left .tabs .find-a-home {
+      display: inline-block;
+      margin-top: 0;
+      margin-right: 32.59px;
+      margin-bottom: 8px; }
+    #home-bar-left .tabs .sell-my-home {
+      display: inline-block;
+      margin: 0 22.71px 8px 22.71px; }
+    #home-bar-left .tabs .see-home-estimate {
+      display: inline-block;
+      margin: 0 0 8px 37.44px; }
     #home-bar-left .tabs .active {
       font-weight: 700;
+      margin-bottom: 0;
+      padding-bottom: 5px;
       border-bottom: solid; }
   #home-bar-left .title {
     font-size: 1.25rem;
     font-weight: 400;
     letter-spacing: -0.03em;
     line-height: 130%;
-    margin-top: 0;
     -webkit-font-smoothing: antialiased; }
 
 .find-a-home-lower {
@@ -176,5 +188,53 @@ button:focus {
     border-width: 0px;
     -webkit-appearance: none;
     color: white; }
+
+.seller-consultant-address {
+  width: 510px;
+  margin-bottom: 20px; }
+  .seller-consultant-address .address-info-container {
+    display: flex;
+    justify-content: space-between; }
+    .seller-consultant-address .address-info-container .address-container {
+      display: flex;
+      flex-direction: column; }
+      .seller-consultant-address .address-info-container .address-container .address-container-text {
+        font-size: .875rem;
+        margin-bottom: 3px; }
+      .seller-consultant-address .address-info-container .address-container .address-input-box {
+        border: 1px solid #ccc;
+        font-size: .875rem;
+        padding-left: 10px;
+        width: 345px;
+        height: 40px; }
+    .seller-consultant-address .address-info-container .zip-code-container {
+      display: flex;
+      flex-direction: column; }
+      .seller-consultant-address .address-info-container .zip-code-container .zip-container-text {
+        font-size: .875rem;
+        margin-bottom: 3px; }
+      .seller-consultant-address .address-info-container .zip-code-container .address-input {
+        border: 1px solid #ccc;
+        height: 38px;
+        width: 153px;
+        padding-left: 10px; }
+
+.sell-my-home-button {
+  font-size: 1rem;
+  text-rendering: optimizeLegibility;
+  width: 45%;
+  height: 40px;
+  border-radius: 2px;
+  line-height: 1;
+  letter-spacing: -.1px;
+  cursor: pointer;
+  box-shadow: none;
+  transition: all .1s ease-out 0s;
+  color: #fff;
+  background-color: #c82021;
+  border-color: #c82021;
+  background: #c82021;
+  border: none;
+  -webkit-appearance: none; }
 
 /*# sourceMappingURL=main.css.map */
