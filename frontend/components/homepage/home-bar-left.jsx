@@ -49,10 +49,10 @@ class HomeBarLeft extends Component {
          );
       } else {
          return (
-            <div className="home-estimate">
+            <div className="input-box">
                <input id="search-box-input" className="search-box-input" placeholder="Enter your street address"/>
                <button className="search-button">
-                  <i className="fa fa-search" aria-hidden="true"></i>
+                  <i className="fa fa-search fa-lg" aria-hidden="true"></i>
                </button>
             </div>
          );
@@ -81,7 +81,7 @@ class HomeBarLeft extends Component {
          );
       } else {
          return (
-            <div className="find-ahome-lower-text">
+            <div className="find-a-home-lower">
                <h2 className="find-a-home-lower-text">
                   <strong>Introducing the Redfin Estimate</strong>
                   <br/>
@@ -89,7 +89,7 @@ class HomeBarLeft extends Component {
                   <br/>
                   of any home-value estimate
                </h2>
-               <button className="home-estimate-button">Learn More</button>
+               <button className="why-sell">Learn More</button>
             </div>
          );
       }
@@ -104,7 +104,7 @@ class HomeBarLeft extends Component {
          </h1>
          <div className="homepage-tab-container">
             <div className="tabs">
-                  <h2 className={this.classSet('find-a-home')} onClick={() => this.setState({['select']: 'find-a-home'})}>Find a Home</h2>
+                  <h2 className={this.classSet('find-a-home')} onClick={() => this.setState({['select']: 'find-a-home'})}>Find a     Home</h2>
                   <h2 className={this.classSet('sell-my-home')} onClick={() => this.setState({['select']: 'sell-my-home'})}>Sell My Home</h2>
                   <h2 className={this.classSet('see-home-estimate')} onClick={() => this.setState({['select']: 'see-home-estimate'})}>See Home Estimate</h2>
             </div>
