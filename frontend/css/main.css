@@ -239,19 +239,32 @@ button:focus {
   border: none;
   -webkit-appearance: none; }
 
-.section-content {
+.marketing-section-one {
   display: flex;
   justify-content: center; }
-  .section-content .centered-content {
+  .marketing-section-one .section-content {
     display: flex;
-    flex-direction: column;
-    width: 66.66666666666666667%;
-    align-items: center; }
-    .section-content .centered-content h1 {
-      font-size: 2rem;
-      font-weight: 300;
-      letter-spacing: -.03em;
-      line-height: 130%;
-      padding: .5em 0; }
+    justify-content: center;
+    max-width: 1020px; }
+    .marketing-section-one .section-content .centered-content {
+      display: flex;
+      flex-direction: column;
+      width: 66.66666666666666667%;
+      align-items: center; }
+      .marketing-section-one .section-content .centered-content h1 {
+        font-size: 2rem;
+        font-weight: 300;
+        letter-spacing: -.03em;
+        line-height: 130%;
+        padding: .5em 0; }
+      .marketing-section-one .section-content .centered-content .button {
+        padding: 12px 1.5rem;
+        cursor: pointer;
+        white-space: nowrap;
+        color: #585858;
+        background-color: #f5f5f5;
+        border: 1px solid #ccc;
+        text-decoration: none;
+        font-weight: 700; }
 
 /*# sourceMappingURL=main.css.map */
