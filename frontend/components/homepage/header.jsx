@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { withRouter } from 'react-router';
+import HeaderBuySell from './header-buy';
 
 class Header extends Component {
   constructor(props){
@@ -44,15 +45,9 @@ class Header extends Component {
             <div className="item-phone">1-714-322-5115</div>
             <div id="top-menus" className="top-menus">
               <div className="redfin-menu">
-                <div className="why-redfin-responsive-buy redfin-menu-item" onClick={this.clickLink('why-buy')}>Buy</div>
-                <div className="why-redfin-responsive-sell redfin-menu-item" onClick={this.clickLink('why-sell')}>Sell</div>
+                 <HeaderBuySell buy={true}/>
+                 <HeaderBuySell buy={false}/>
                 <div className="agents-responsive redfin-menu-item" onClick={this.clickLink('agents')}>Real Estate Agents</div>
-                <div className="forums redfin-menu-item"
-                  onMouseEnter={() => this.setState({ ["showList"]: true })}
-                  onMouseLeave={() => this.setState({ ["showList"]: false})}
-                >Tools
-                {this.toolList()}
-              </div>
               </div>
             </div>
             <div id="user-menus">

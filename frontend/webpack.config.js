@@ -7,6 +7,10 @@ const path = require('path');
     filename: 'bundle.js'
   },
   resolve: {
+     alias: {
+           'react': 'inferno-compat',
+           'react-dom': 'inferno-compat'
+      },
     extensions: ['', '.js', '.jsx']
   },
   module: {

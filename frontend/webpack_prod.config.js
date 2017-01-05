@@ -8,7 +8,11 @@ module.exports = {
     filename: 'bundle.js'
   },
   resolve: {
-    extensions: ['', '.js', '.jsx']
+     alias: {
+            'react': 'inferno-compat',
+            'react-dom': 'inferno-compat'
+        },
+     extensions: ['', '.js', '.jsx']
   },
   module: {
     loaders: [
@@ -36,6 +40,13 @@ module.exports = {
     compress: {
         warnings: false
       }
-    })
+   }),
+   "module-resolver", {
+            "root": ["."],
+            "alias": {
+                "react": "inferno-compat",
+                "react-dom": "inferno-compat"
+            }
+        }
   ]
 };

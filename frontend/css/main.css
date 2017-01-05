@@ -265,6 +265,11 @@ button:focus {
         background-color: #f5f5f5;
         border: 1px solid #ccc;
         text-decoration: none;
-        font-weight: 700; }
+        font-weight: 700;
+        transition: all .1s ease-out 0s; }
+      .marketing-section-one .section-content .centered-content .button:hover {
+        color: #333;
+        background-color: #e2e2e2;
+        box-shadow: none; }
 
 /*# sourceMappingURL=main.css.map */
