@@ -21,8 +21,8 @@ class HeaderBuySell extends Component {
 			return (
 				<div className="why-redfin-responsive-buy"
 					onClick={this.clickLink('why-buy')}
-					onMouseEnter={() => this.setState(["showList"]: true)}
-					onMouseLeave={() => this.setState(["showList"]: false)}
+					onMouseEnter={() => this.setState({["showList"]: true})}
+					onMouseLeave={() => this.setState({["showList"]: false})}
 					>Buy ▾
 				</div>
 			);
