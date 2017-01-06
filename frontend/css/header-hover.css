@@ -1,0 +1,47 @@
+.redfin-menu-item {
+  position: relative;
+  display: inline-block; }
+  .redfin-menu-item .why-buy-list ul {
+    padding: 0.25rem 0 !important;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    white-space: normal; }
+  .redfin-menu-item .list {
+    height: 138px;
+    position: absolute;
+    right: 0;
+    display: none;
+    width: 240px;
+    margin-top: 19px;
+    color: #333;
+    text-align: -webkit-match-parent;
+    line-height: 1.25;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    vertical-align: baseline;
+    background-color: white; }
+  .redfin-menu-item .why-sell-list ul {
+    padding: 0.25rem 0 !important;
+    white-space: normal;
+    margin: 0;
+    padding: 0;
+    width: 100%; }
+
+.buy:hover .why-buy-list {
+  display: flex; }
+
+.sell:hover .why-sell-list {
+  display: flex; }
+
+ul li {
+  width: 100%;
+  padding: .25rem 1.5rem; }
+  ul li a {
+    display: block;
+    font-size: .875rem;
+    height: 18px;
+    width: 192px;
+    font-weight: 400; }
+
+/*# sourceMappingURL=header-hover.css.map */

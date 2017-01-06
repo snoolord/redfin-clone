@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+
 class HeaderBuySell extends Component {
 
 	constructor(props) {
@@ -20,101 +21,90 @@ class HeaderBuySell extends Component {
 	buyOrSell() {
 		if ( this.props.buy ) {
 			return (
-				<div className="why-redfin-responsive-buy"
-					>Buy ▾
-					<div className="fly-out">
-						{this.showList()}
-					</div>
-				</div>
+				"Buy ▾"
 			);
 		} else {
 			return (
-				<div className="why-redfin-responsive-sell"
-					>Sell ▾
-					<div className="fly-out">
-						{this.showList()}
-					</div>
-				</div>
+				"Sell ▾"
 			);
 		}
 	}
 
 	showList() {
-		if (this.state.showList && this.props.buy) {
+		if (this.props.buy) {
 			return (
-				<ul className="why-buy-list">
-					<li>
-						<ul>
+				<div className="why-buy-list list">
+					<ul>
+						<li>
 							<a onClick={this.clickLink('why-buy')}>Buy with Redfin</a>
-						</ul>
-						<ul>
+						</li>
+						<li>
 							<a onClick={this.clickLink('how-much-house-can-i-afford')}>
 								Affordability Calculator
 							</a>
-						</ul>
-						<ul>
+						</li>
+						<li>
 							<a onClick={this.clickLink('home-buying-guide')}>
 								Home Buying Guide
 							</a>
-						</ul>
-						<ul>
+						</li>
+						<li>
 							<a onClick={this.clickLink('buy-a-home/openbook')}>
 								Find Lenders & Inspectors
 							</a>
-						</ul>
-						<ul>
+						</li>
+						<li>
 							<a onClick={this.clickLink('buy-a-home/classes-and-events')}>
 								Classes & Events
 							</a>
-						</ul>
-					</li>
-				</ul>
+						</li>
+					</ul>
+				</div>
 			);
-		} else if (this.state.showList && !this.props.buy) {
+		} else if (!this.props.buy) {
 			return (
-				<ul className="why-sell-list">
-					<li>
-						<ul>
+				<div className="why-sell-list list">
+					<ul>
+						<li>
 							<a onClick={this.clickLink('why-sell')}>Sell with Redfin</a>
-						</ul>
-						<ul>
+						</li>
+						<li>
 							<a onClick={this.clickLink('what-is-my-house-worth')}>
 								What is my home worth
 							</a>
-						</ul>
-						<ul>
+						</li>
+						<li>
 							<a onClick={this.clickLink('sell-a-home/will-selling-pay-off')}>
 								Home Buying Guide
 							</a>
-						</ul>
-						<ul>
+						</li>
+						<li>
 							<a onClick={this.clickLink('sell-a-home/home-selling-guide')}>
 								Home Selling Guide
 							</a>
-						</ul>
-						<ul>
+						</li>
+						<li>
 							<a onClick={this.clickLink('sell-a-home/find-handy-people')}>
 								Find Handypeople & Stagers
 							</a>
-						</ul>
-					</li>
-				</ul>
-			);
-		} else {
-			return (
-				<div></div>
+						</li>
+					</ul>
+				</div>
 			);
 		}
 	}
 
 	render() {
 		return (
-			<div className="redfin-menu-item"
+			<div className={ this.props.buy ?
+					"buy redfin-menu-item" :
+					"sell redfin-menu-item"
+				}
 				onMouseEnter={() => this.setState({["showList"]: true})}
 				onMouseLeave={() => this.setState({["showList"]: false})}
-
 				>
 				{this.buyOrSell()}
+				{this.showList()}
 			</div>
 		);
 	}
