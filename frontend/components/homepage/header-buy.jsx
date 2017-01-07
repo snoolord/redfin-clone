@@ -99,8 +99,8 @@ class HeaderBuySell extends Component {
 	render() {
 		return (
 			<div className={ this.props.buy ?
-					"buy redfin-menu-item" :
-					"sell redfin-menu-item"
+					"buy redfin-menu-item menu-item" :
+					"sell redfin-menu-item menu-item"
 				}
 				onMouseEnter={() => this.setState({["showList"]: true})}
 				onMouseLeave={() => this.setState({["showList"]: false})}

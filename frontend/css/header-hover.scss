@@ -69,4 +69,8 @@ ul {
             font-weight: 400;
         }
     }
+    li:hover {
+        box-shadow: 0 0 0 0 #aaa;
+        background-color: #f5f5f5;
+    }
 }

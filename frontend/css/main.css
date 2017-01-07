@@ -13,6 +13,9 @@ html body {
     width: 92px;
     height: 35px; }
 
+#RedfinLogo:hover {
+  opacity: .7; }
+
 *, *:before, *:after {
   box-sizing: inherit; }
 
@@ -77,6 +80,9 @@ ul li {
     height: 18px;
     width: 192px;
     font-weight: 400; }
+ul li:hover {
+  box-shadow: 0 0 0 0 #aaa;
+  background-color: #f5f5f5; }
 
 .clearfix:after {
   content: " ";
@@ -150,6 +156,10 @@ ul li {
         flex-grow: 1;
         justify-content: center;
         align-items: center; }
+
+.menu-item:hover {
+  color: rgba(255, 255, 255, 0.7);
+  cursor: pointer; }
 
 #home-bar {
   height: 600px;
