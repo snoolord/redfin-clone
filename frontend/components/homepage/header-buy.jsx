@@ -59,6 +59,7 @@ class HeaderBuySell extends Component {
 							</a>
 						</li>
 					</ul>
+					<div className="arrow"></div>
 				</div>
 			);
 		} else if (!this.props.buy) {
@@ -89,6 +90,7 @@ class HeaderBuySell extends Component {
 							</a>
 						</li>
 					</ul>
+					<div className="arrow"></div>
 				</div>
 			);
 		}

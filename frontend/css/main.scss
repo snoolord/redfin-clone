@@ -1,4 +1,3 @@
-@import "header-hover";
 
 html body {
    width: 100%;
@@ -33,6 +32,7 @@ html {
 li {
    list-style: none;
 }
+@import "header-hover";
 
 .clearfix:after {
    content: " "; /* Older browser do not support empty content */
@@ -60,7 +60,6 @@ li {
    font-family: "Helvetica",Arial,sans-serif;
    -webkit-font-smoothing: antialiased;
    color: white;
-   border-bottom: 1px solid white;
    .single-line-menus {
       display: flex;
       align-items: center;

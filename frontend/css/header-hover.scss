@@ -36,6 +36,7 @@
         }
     }
 }
+
 .buy:hover .why-buy-list {
     display: flex;
 }
@@ -43,6 +44,18 @@
 .sell:hover .why-sell-list {
     display: flex;
 }
+
+.arrow {
+    width: 0;
+    height: 0;
+    border-left: 15px solid transparent;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid white;
+    position: absolute;
+    top: -15px;
+    right: 23px;
+}
+
 
 ul {
     li {
