@@ -23,7 +23,7 @@ html body {
 }
 
 #RedfinLogo:hover {
-    opacity: .7;    
+    opacity: .7;
 }
 
 *, *:before, *:after {
@@ -36,6 +36,7 @@ html {
 li {
    list-style: none;
 }
+@import "customer-quotes";
 @import "header-hover";
 
 .clearfix:after {
@@ -132,7 +133,7 @@ li {
    background: linear-gradient(rgba(0,0,0,0.55));
    background-size: cover;
    background-position: bottom;
-   background-image: linear-gradient(rgba(0,0,0, 0.55) 0, rgba(0,0,0,0) 250px), linear-gradient(to left, rgba(0,0,0,.45) 0,rgba(0,0,0,0) 350px), url("https://ssl.cdn-redfin.com/v135.1.1/images/homepage/banners/DuskPeacock_Desktop.jpg");
+   background-image: linear-gradient(rgba(0,0,0, 0.55) 0, rgba(0,0,0,0) 250px), linear-gradient(to left, rgba(0,0,0,.45) 0,rgba(0,0,0,0) 350px), url("https://ssl.cdn-redfin.com/v139.2.0/images/homepage/banners/SEA_QueenAnne_April_Hero.jpg");
 }
 // Home Bar Left
 #home-bar-left {

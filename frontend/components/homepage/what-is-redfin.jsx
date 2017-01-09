@@ -1,6 +1,6 @@
 import React from 'react';
 
-const MarketingSectionOne = () => {
+const WhatIsRedfin= () => {
    return (
       <section className="marketing-section-one">
          <div className="section-content">
@@ -19,4 +19,4 @@ const MarketingSectionOne = () => {
    );
 };
 
-export default MarketingSectionOne;
+export default WhatIsRedfin;

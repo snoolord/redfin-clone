@@ -25,6 +25,13 @@ html {
 li {
   list-style: none; }
 
+.container {
+  margin: 0 auto;
+  padding: 40px;
+  width: 80%;
+  color: #333;
+  background: #419be0; }
+
 .redfin-menu-item {
   position: relative;
   display: inline-block; }
@@ -166,7 +173,7 @@ ul li:hover {
   background: linear-gradient(rgba(0, 0, 0, 0.55));
   background-size: cover;
   background-position: bottom;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.55) 0, transparent 250px), linear-gradient(to left, rgba(0, 0, 0, 0.45) 0, transparent 350px), url("https://ssl.cdn-redfin.com/v135.1.1/images/homepage/banners/DuskPeacock_Desktop.jpg"); }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.55) 0, transparent 250px), linear-gradient(to left, rgba(0, 0, 0, 0.45) 0, transparent 350px), url("https://ssl.cdn-redfin.com/v139.2.0/images/homepage/banners/SEA_QueenAnne_April_Hero.jpg"); }
 
 #home-bar-left {
   color: white;
