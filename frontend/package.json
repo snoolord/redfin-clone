@@ -7,9 +7,8 @@
     "test": "app"
   },
   "scripts": {
-    "test": "echo Error: no test specified && exit 1",
-    "start": "node ./bin/www",
-    "build": "webpack --config webpack_prod.config.js --progress -p"
+    "start": "webpack-dev-server --progress --displayer-erros-details --inline --hot --content-base",
+    "build": "webpack --optimize-minimize --config webpack.config.js"
   },
   "keywords": [],
   "author": "",
@@ -36,9 +35,11 @@
     "react-redux": "^4.4.5",
     "react-router": "^2.6.1",
     "redux": "^3.5.2",
+    "sass-loader": "^4.1.1",
     "serve-favicon": "~2.3.0",
-    "style-loader": "^0.13.0",
-    "webpack": "^1.13.1"
+    "style-loader": "^0.13.1",
+    "webpack": "^1.13.1",
+    "webpack-dev-server": "^1.16.2"
   },
   "devDependencies": {
     "babel-plugin-module-resolver": "^2.4.0",

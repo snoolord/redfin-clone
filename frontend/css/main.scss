@@ -1,11 +1,11 @@
 
 html body {
-   width: 100%;
-   height: 100%;
-   margin: 0;
-   padding: 0;
-   -webkit-font-smoothing: antialiased;
-   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    -webkit-font-smoothing: antialiased;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 
 #root {
@@ -13,12 +13,12 @@ html body {
 }
 #RedfinLogo
 {
-   color: white;
-   svg {
-      fill: white;
-      width: 92px;
-      height:35px;
-   }
+    color: white;
+    svg {
+        fill: white;
+        width: 92px;
+        height:35px;
+    }
 
 }
 
@@ -27,100 +27,100 @@ html body {
 }
 
 *, *:before, *:after {
-   box-sizing: inherit;
+    box-sizing: inherit;
 }
 
 html {
-   box-sizing: border-box;
+    box-sizing: border-box;
 }
 li {
-   list-style: none;
+    list-style: none;
 }
 @import "customer-quotes";
 @import "header-hover";
 
 .clearfix:after {
-   content: " "; /* Older browser do not support empty content */
-   visibility: hidden;
-   display: block;
-   height: 0;
-   clear: both;
+    content: " "; /* Older browser do not support empty content */
+    visibility: hidden;
+    display: block;
+    height: 0;
+    clear: both;
 }
 
 .active::after {
-   content:"";
-   position: absolute;
-   height: 0.5em;
-   border-top: 1px solid white;
-   z-index: 10;
+    content:"";
+    position: absolute;
+    height: 0.5em;
+    border-top: 1px solid white;
+    z-index: 10;
 }
 .header {
-   padding: 0 16px;
-   display: flex;
-   justify-content: space-between;
-   height: 60px;
-   font-size: 15px;
-   line-height: 20px;
-   align-items: center;
-   font-family: "Helvetica",Arial,sans-serif;
-   -webkit-font-smoothing: antialiased;
-   color: white;
-   .single-line-menus {
-      display: flex;
-      align-items: center;
-      height: 100%;
-      width: 547.5px;
-      justify-content: space-between;
-      .item-phone {
-         height: 100%;
-         display: flex;
-         align-items: center;
-         padding: 0 10px;
-      }
-      #top-menus {
-         height: 100%;
-         display: flex;
-         align-items: center;
-         flex-grow: 1;
-         .redfin-menu {
-            width: 250px;
-            display: flex;
+    padding: 0 16px;
+    display: flex;
+    justify-content: space-between;
+    height: 60px;
+    font-size: 15px;
+    line-height: 20px;
+    align-items: center;
+    font-family: "Helvetica",Arial,sans-serif;
+    -webkit-font-smoothing: antialiased;
+    color: white;
+    .single-line-menus {
+        display: flex;
+        align-items: center;
+        height: 100%;
+        width: 547.5px;
+        justify-content: space-between;
+        .item-phone {
             height: 100%;
+            display: flex;
             align-items: center;
-            flex-grow: 3;
-            justify-content: space-around;
-            margin-top: 0;
-            .redfin-menu-item {
-               display: flex;
-               align-items: center;
-               justify-content: center;
-               height: 100%;
-               flex-grow: 1;
+            padding: 0 10px;
+        }
+        #top-menus {
+            height: 100%;
+            display: flex;
+            align-items: center;
+            flex-grow: 1;
+            .redfin-menu {
+                width: 250px;
+                display: flex;
+                height: 100%;
+                align-items: center;
+                flex-grow: 3;
+                justify-content: space-around;
+                margin-top: 0;
+                .redfin-menu-item {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    height: 100%;
+                    flex-grow: 1;
+                }
+                .forums {
+                    display: flex;
+                    align-items: center;
+                    position: relative;
+                    .tool-list {
+                        position: absolute;
+                    }
+                }
             }
-            .forums {
-               display: flex;
-               align-items: center;
-               position: relative;
-               .tool-list {
-                  position: absolute;
-               }
-            }
-         }
-      }
+        }
 
-      #user-menus {
-         display: flex;
-         flex-grow: 1;
-         justify-content: space-around;
-         height: 100%;
-         .user-menu-item {
+        #user-menus {
             display: flex;
             flex-grow: 1;
-            justify-content: center;
-            align-items: center;
-         }
-      }
-   }
+            justify-content: space-around;
+            height: 100%;
+            .user-menu-item {
+                display: flex;
+                flex-grow: 1;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+    }
 }
 
 .menu-item:hover {
@@ -129,213 +129,213 @@ li {
 }
 
 #home-bar {
-   height: 600px;
-   background: linear-gradient(rgba(0,0,0,0.55));
-   background-size: cover;
-   background-position: bottom;
-   background-image: linear-gradient(rgba(0,0,0, 0.55) 0, rgba(0,0,0,0) 250px), linear-gradient(to left, rgba(0,0,0,.45) 0,rgba(0,0,0,0) 350px), url("https://ssl.cdn-redfin.com/v139.2.0/images/homepage/banners/SEA_QueenAnne_April_Hero.jpg");
+    height: 600px;
+    background: linear-gradient(rgba(0,0,0,0.55));
+    background-size: cover;
+    background-position: bottom;
+    background-image: linear-gradient(rgba(0,0,0, 0.55) 0, rgba(0,0,0,0) 250px), linear-gradient(to left, rgba(0,0,0,.45) 0,rgba(0,0,0,0) 350px), url("https://ssl.cdn-redfin.com/v139.2.0/images/homepage/banners/SEA_QueenAnne_April_Hero.jpg");
 }
 // Home Bar Left
 #home-bar-left {
-   color: white;
-   font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-   margin-left: 245px;
-   max-width: 556px;
-   padding: 30px 22px 0px;
-   .brand-text {
-      margin: 0;
-      margin-bottom: 32px;
-      font-size: 3rem;
-      font-weight: 300;
-      letter-spacing: -.03em;
-      line-height: 130%;
-      -webkit-font-smoothing: antialiased;
-   }
-   .why-sell {
-      font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
-      font-weight: 700;
-      font-size: 16px;
-      color: rgba(51, 51, 51, 0.75);
-      padding: 12px 24px;
-   }
-   .tabs {
-      width: 550px;
-      justify-content: space-between;
-      margin-bottom: 16px;
-      .find-a-home {
-         display: inline-block;
-         margin-top: 0;
-         margin-right: 32.59px;
-         margin-bottom: 8px;
-      }
-      .sell-my-home {
-         display: inline-block;
-         margin: 0 22.71px 8px 22.71px;
-      }
-      .see-home-estimate {
-         display: inline-block;
-         margin: 0 0 8px 37.44px;
-      }
-      .active {
-         font-weight: 700;
-         margin-bottom: 0;
-         padding-bottom: 5px;
-         border-bottom: solid;
-      }
-   }
-   .title {
-      font-size: 1.25rem;
-      font-weight: 400;
-      letter-spacing: -.03em  ;
-      line-height: 130%;
-      -webkit-font-smoothing: antialiased;
-   }
+    color: white;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    margin-left: 245px;
+    max-width: 556px;
+    padding: 30px 22px 0px;
+    .brand-text {
+        margin: 0;
+        margin-bottom: 32px;
+        font-size: 3rem;
+        font-weight: 300;
+        letter-spacing: -.03em;
+        line-height: 130%;
+        -webkit-font-smoothing: antialiased;
+    }
+    .why-sell {
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: 700;
+        font-size: 16px;
+        color: rgba(51, 51, 51, 0.75);
+        padding: 12px 24px;
+    }
+    .tabs {
+        width: 550px;
+        justify-content: space-between;
+        margin-bottom: 16px;
+        .find-a-home {
+            display: inline-block;
+            margin-top: 0;
+            margin-right: 32.59px;
+            margin-bottom: 8px;
+        }
+        .sell-my-home {
+            display: inline-block;
+            margin: 0 22.71px 8px 22.71px;
+        }
+        .see-home-estimate {
+            display: inline-block;
+            margin: 0 0 8px 37.44px;
+        }
+        .active {
+            font-weight: 700;
+            margin-bottom: 0;
+            padding-bottom: 5px;
+            border-bottom: solid;
+        }
+    }
+    .title {
+        font-size: 1.25rem;
+        font-weight: 400;
+        letter-spacing: -.03em  ;
+        line-height: 130%;
+        -webkit-font-smoothing: antialiased;
+    }
 }
 
 .find-a-home-lower {
-   padding: 2rem 0 10px;
-   .find-a-home-lower-text {
-      line-height: 1.5;
-      margin: 0;
-      padding: 0 0 1rem;
-      font-size: 16px;
-      font-weight: 400;
-      -webkit-font-smoothing: antialiased;
-   }
+    padding: 2rem 0 10px;
+    .find-a-home-lower-text {
+        line-height: 1.5;
+        margin: 0;
+        padding: 0 0 1rem;
+        font-size: 16px;
+        font-weight: 400;
+        -webkit-font-smoothing: antialiased;
+    }
 }
 
 textarea, input {
-   outline: none;
-   border-width: 0px;
-   border-style: none;
+    outline: none;
+    border-width: 0px;
+    border-style: none;
 }
 
 
 button:focus {
-   outline:0;
+    outline:0;
 }
 .input-box {
-   display: flex;
-   align-items: center;
-   width: 510px;
-   border: 1px solid #ccc;
-   border-width: 0px;
-   input {
-      -webkit-appearance: none;
-      -webkit-user-select: text;
-      padding-left: 10px;
-   }
-   #search-box-input {
-      width: 460px;
-      height: 50px;
-      font-size: 16px;
-      font-weight: 300px;
-   }
-   .search-button {
-      height: 50px;
-      width: 50px;
-      padding: 0;
-      background-color: rgb(200,32,33);
-      border-width: 0px;
-      -webkit-appearance: none;
-      color: white;
-   }
+    display: flex;
+    align-items: center;
+    width: 510px;
+    border: 1px solid #ccc;
+    border-width: 0px;
+    input {
+        -webkit-appearance: none;
+        -webkit-user-select: text;
+        padding-left: 10px;
+    }
+    #search-box-input {
+        width: 460px;
+        height: 50px;
+        font-size: 16px;
+        font-weight: 300px;
+    }
+    .search-button {
+        height: 50px;
+        width: 50px;
+        padding: 0;
+        background-color: rgb(200,32,33);
+        border-width: 0px;
+        -webkit-appearance: none;
+        color: white;
+    }
 
 }
 
 // Sell My Home
 
 .seller-consultant-address {
-   width: 510px;
-   margin-bottom: 20px;
-   .address-info-container {
-      display: flex;
-      justify-content: space-between;
-      .address-container {
-         display: flex;
-         flex-direction: column;
-         .address-container-text {
-            font-size: .875rem;
-            margin-bottom: 3px;
-         }
-         .address-input-box {
-            border: 1px solid #ccc;
-            font-size: .875rem;
-            padding-left: 10px;
-            width: 345px;
-            height: 40px;
-         }
-      }
-      .zip-code-container {
-         display: flex;
-         flex-direction: column;
-         .zip-container-text {
-            font-size: .875rem;
-            margin-bottom: 3px;
-         }
-         .address-input {
-            border: 1px solid #ccc;
-            height: 38px;
-            width: 153px;
-            padding-left: 10px;
-         }
-      }
-   }
+    width: 510px;
+    margin-bottom: 20px;
+    .address-info-container {
+        display: flex;
+        justify-content: space-between;
+        .address-container {
+            display: flex;
+            flex-direction: column;
+            .address-container-text {
+                font-size: .875rem;
+                margin-bottom: 3px;
+            }
+            .address-input-box {
+                border: 1px solid #ccc;
+                font-size: .875rem;
+                padding-left: 10px;
+                width: 345px;
+                height: 40px;
+            }
+        }
+        .zip-code-container {
+            display: flex;
+            flex-direction: column;
+            .zip-container-text {
+                font-size: .875rem;
+                margin-bottom: 3px;
+            }
+            .address-input {
+                border: 1px solid #ccc;
+                height: 38px;
+                width: 153px;
+                padding-left: 10px;
+            }
+        }
+    }
 }
 
 .sell-my-home-button {
-   font-size: 1rem;
-   text-rendering: optimizeLegibility;
-   width: 45%;
-   height: 40px;
-   border-radius: 2px;
-   line-height: 1;
-   letter-spacing: -.1px;
-   cursor: pointer;
-   box-shadow: none;
-   transition: all .1s ease-out 0s;
-   color: #fff;
-   background-color: #c82021;
-   border-color: #c82021;
-   background: #c82021;
-   border: none;
-   -webkit-appearance: none;
+    font-size: 1rem;
+    text-rendering: optimizeLegibility;
+    width: 45%;
+    height: 40px;
+    border-radius: 2px;
+    line-height: 1;
+    letter-spacing: -.1px;
+    cursor: pointer;
+    box-shadow: none;
+    transition: all .1s ease-out 0s;
+    color: #fff;
+    background-color: #c82021;
+    border-color: #c82021;
+    background: #c82021;
+    border: none;
+    -webkit-appearance: none;
 }
 .marketing-section-one {
-   display: flex;
-   justify-content: center;
-   .section-content {
-      display: flex;
-      justify-content: center;
-      max-width: 1020px;
-      .centered-content {
-         display: flex;
-         flex-direction: column;
-         width: 66.66666666666666667%;
-         align-items: center;
-         h1 {
-            font-size: 2rem;
-            font-weight: 300;
-            letter-spacing: -.03em;
-            line-height: 130%;
-            padding: .5em 0;
-         }
-         .button {
-            padding: 12px 1.5rem;
-            cursor: pointer;
-            white-space: nowrap;
-            color: #585858;
-            background-color: #f5f5f5;
-            border: 1px solid #ccc;
-            text-decoration: none;
-            font-weight: 700;
-            transition: all .1s ease-out 0s;
-         }
-         .button:hover {
-            color: #333;
-            background-color: #e2e2e2;
-            box-shadow: none;
-         }
-      }
-   }
+    display: flex;
+    justify-content: center;
+    .section-content {
+        display: flex;
+        justify-content: center;
+        max-width: 1020px;
+        .centered-content {
+            display: flex;
+            flex-direction: column;
+            width: 66.66666666666666667%;
+            align-items: center;
+            h1 {
+                font-size: 2rem;
+                font-weight: 300;
+                letter-spacing: -.03em;
+                line-height: 130%;
+                padding: .5em 0;
+            }
+            .button {
+                padding: 12px 1.5rem;
+                cursor: pointer;
+                white-space: nowrap;
+                color: #585858;
+                background-color: #f5f5f5;
+                border: 1px solid #ccc;
+                text-decoration: none;
+                font-weight: 700;
+                transition: all .1s ease-out 0s;
+            }
+            .button:hover {
+                color: #333;
+                background-color: #e2e2e2;
+                box-shadow: none;
+            }
+        }
+    }
 }
